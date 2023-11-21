@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-scale=1, initial-scale=1.0">
+    <title>Among Us</title>
+    <link rel="stylesheet" href="node_modules/bulma/css/bulma.min.css">
+</head>
+
+<body class="has-background-link">
+    <section class="section">
+        <div class="container box">
+            <h1 class="title">Bit Academy Planner.</h1>
+            <p class="subtitle">Alles <strong>Georganiseerd</strong>!</p>
+            <div class="dropdown is-hoverable ha">
+                <div class="dropdown-trigger">
+                    <button class="button" aria-haspopup="true" aria-controls="dropdown-menu">
+                        <t><span class="icon is-small"><i class="fa fa-user" aria-hidden="true"></i></span> Student view</t>
+                        <span class="icon is-small">
+                            <i class="fas fa-angle-down" aria-hidden="true"></i>
+                        </span>
+                    </button>
+                </div>
+                <div class="dropdown-menu" id="dropdown-menu" role="menu">
+                    <div class="dropdown-content">
+                        <a href="index.html" class="dropdown-item is-active"><span class="icon is-small"><i class="fa fa-user" aria-hidden="true"></i></span> Student view</a>
+                        <hr class="dropdown-divider">
+                        <a href="coatch.html" class="dropdown-item"><span class="icon is-small is-danger"><i class="fas fa-lock" aria-hidden="true"></i></span> Coatch view</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section">
+        <div class="columns">
+            <div class="container content box is-marginless mr-4">
+                <h2 class="title is-5"><span class="icon">
+                    <i class="fas fa-flag-checkered"></i>
+                </span>Doelen</h2>
+                <ul>
+                    <div class="dropdown is-hoverable ha box">
+                        <div class="dropdown-trigger">
+                            <h6>Bootstrap project afmaken</h6>
+                            <t>de website telefoon prove maken</t>
+                            <p class="has-text-grey-light">Toegevoegt door Mike om 9:01</p>
+                            <t class="has-text-grey-light">Doel moet af op Ma</t>
+                        </div>
+                        <div class="dropdown-menu" id="dropdown-menu" role="menu">
+                            <div class="dropdown-content">
+                                <button class="button has-background-success is-centered" disabled>Afgerond</button>
+                                <button class="button is-danger is-outlined"><span>Verwijder</span><span class="icon is-small"><i class="fas fa-times"></i></span></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dropdown is-hoverable ha box">
+                        <div class="dropdown-trigger">
+                                <h6>Bulma project afmaken</h6>
+                                <t>de website telefoon prove maken</t>
+                                <p class="has-text-grey-light">Toegevoegt door Mike om 9:15</p>
+                                <t class="has-text-grey-light">Doel moet af op Di</t>
+                        </div>
+                        <div class="dropdown-menu" id="dropdown-menu" role="menu">
+                            <div class="dropdown-content">
+                                <button class="button has-background-success is-centered">Rond af</button>
+                                <button class="button is-danger is-outlined"><span>Verwijder</span><span class="icon is-small"><i class="fas fa-times"></i></span></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dropdown is-hoverable ha box">
+                        <div class="dropdown-trigger">
+                                <h6>DeepDive afronden</h6>
+                                <t>alle opdrachten voor de deepdive week afronden</t>
+                                <p class="has-text-grey-light">Toegevoegt door Mike om 9:18</p>
+                                <t class="has-text-grey-light">Doel moet af op Vr</t>
+                        </div>
+                        <div class="dropdown-menu" id="dropdown-menu" role="menu">
+                            <div class="dropdown-content">
+                                <button class="button has-background-success is-centered">Rond af</button>
+                                <button class="button is-danger is-outlined"><span>Verwijder</span><span class="icon is-small"><i class="fas fa-times"></i></span></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dropdown is-hoverable ha box">
+                        <div class="dropdown-trigger">
+                                <h6>Help Iedereen!</h6>
+                                <t>werk samen, we gaan dit winnen!</t>
+                                <p class="has-text-grey-light">Toegevoegt door Groep 1 om 9:20</p>
+                                <t class="has-text-grey-light">Doel moet af op Vr</t>
+                        </div>
+                        <div class="dropdown-menu" id="dropdown-menu" role="menu">
+                            <div class="dropdown-content">
+                                <button class="button has-background-success is-centered">Rond af</button>
+                                <button class="button is-danger is-outlined"><span>Verwijder</span><span class="icon is-small"><i class="fas fa-times"></i></span></button>
+                            </div>
+                        </div>
+                    </div>
+                </ul>
+                <form action="">
+                    <label class="label">Een doel aanmaken</label>
+                    <input class="input" type="text" name="name" id="name" placeholder="Mijn Project">
+                    <textarea class="textarea"
+                        placeholder="Dit wil ik allemaal of hebben binnen mijn project"></textarea>
+                    <label class="label">Voor waneer wil je het af hebben</label>
+                    <input class="input" type="date" name="date" id="date">
+                    <button class="button is-outlined is-link">Voeg doel toe</button>
+                </form>
+            </div>
+            <div class="container column box is-marginless">
+                <h1 class="title is-5">Agenda</h1>
+                <table class="table is-striped table is-fullwidth table is-striped">
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th><abbr title="Maandag">Ma</abbr></th>
+                            <th><abbr title="Dinsdag">Di</abbr></th>
+                            <th><abbr title="Woensdag">Wo</abbr></th>
+                            <th><abbr title="Donderdag">Do</abbr></th>
+                            <th><abbr title="Vrijdag">Vr</abbr></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>School-Tijden</th>
+                            <td>9:00 - 17:00</td>
+                            <td>9:00 - 17:00</td>
+                            <td>9:00 - 17:00</td>
+                            <td>9:00 - 17:00</td>
+                            <td>9:00 - 17:00</td>
+                        </tr>
+                        <tr>
+                            <th>Doelen</th>
+                            <td><abbr title="Bootstrap project afmaken">Boo..</abbr></td>
+                            <td><abbr title="Bulma project afmaken">Bul..</abbr></td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td><abbr title="DeepDive afronden en Help Iedereen!">Dee.. hel..</abbr></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js'></script>
+</body>
+
+</html>
